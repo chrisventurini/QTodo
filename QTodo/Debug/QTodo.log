@@ -1,0 +1,9 @@
+﻿  Uic'ing MainWindow.ui...
+  Rcc'ing MainWindow.qrc...
+  Moc'ing MainWindow.h...
+   RCC: Warning: No resources in 'C:\Users\chris\Documents\GitHub\QTodo\QTodo\MainWindow.qrc'.
+  main.cpp
+  MainWindow.cpp
+  qrc_MainWindow.cpp
+  moc_MainWindow.cpp
+  QTodo.vcxproj -> C:\Users\chris\Documents\GitHub\QTodo\Win32\Debug\QTodo.exe

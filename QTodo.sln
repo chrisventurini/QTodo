@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QTodo", "QTodo\QTodo.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QTodo_Tests", "QTodo_Tests\QTodo_Tests.vcxproj", "{A794B5CC-7497-437A-B3E7-DA54A2AD92F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B12702AD-ABFB-343A-A199-8E24837244A3} = {B12702AD-ABFB-343A-A199-8E24837244A3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		UnitTesting|x86 = UnitTesting|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x86.Build.0 = Debug|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.ActiveCfg = Release|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.Build.0 = Release|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.UnitTesting|x86.ActiveCfg = UnitTesting|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.UnitTesting|x86.Build.0 = UnitTesting|Win32
+		{A794B5CC-7497-437A-B3E7-DA54A2AD92F7}.Debug|x86.ActiveCfg = Debug|Win32
+		{A794B5CC-7497-437A-B3E7-DA54A2AD92F7}.Debug|x86.Build.0 = Debug|Win32
+		{A794B5CC-7497-437A-B3E7-DA54A2AD92F7}.Release|x86.ActiveCfg = Release|Win32
+		{A794B5CC-7497-437A-B3E7-DA54A2AD92F7}.Release|x86.Build.0 = Release|Win32
+		{A794B5CC-7497-437A-B3E7-DA54A2AD92F7}.UnitTesting|x86.ActiveCfg = UnitTesting|Win32
+		{A794B5CC-7497-437A-B3E7-DA54A2AD92F7}.UnitTesting|x86.Build.0 = UnitTesting|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2A29FD7-A4F5-4518-B9C8-D534B18F4793}
+	EndGlobalSection
+EndGlobal
