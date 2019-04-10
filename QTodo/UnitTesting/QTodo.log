@@ -1,5 +1,2 @@
-﻿  moc_MainWindow.cpp
-  qrc_MainWindow.cpp
-  MainWindow.cpp
-  main.cpp
+﻿  main.cpp
   QTodo.vcxproj -> C:\Users\chris\Documents\GitHub\QTodo\Win32\UnitTesting\QTodo.lib

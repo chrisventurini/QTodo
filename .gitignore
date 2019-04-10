@@ -34,8 +34,12 @@
 # Visual Studio Files
 .vs
 *.pdb
-*.tlog
 *.DotSettings.user
+*.idb
+
+# Log Files
+*.tlog
+*.log
 
 # Visual Studio Build Directories
 Win32

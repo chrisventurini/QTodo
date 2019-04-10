@@ -1,2 +1,0 @@
-﻿gtestd.lib(gtest-all.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-  QTodo_Tests.vcxproj -> C:\Users\chris\Documents\GitHub\QTodo\Win32\UnitTesting\QTodo_Tests.exe

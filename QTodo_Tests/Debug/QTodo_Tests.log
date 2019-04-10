@@ -1,5 +1,0 @@
-﻿  Uic'ing QTodo_Tests.ui...
-  main.cpp
-  MainWindow_Tests.cpp
-c:\users\chris\documents\github\qtodo\qtodo_tests\mainwindow_tests.cpp(1): fatal error C1083: Cannot open include file: 'gtest/gtest.h': No such file or directory
-c:\users\chris\documents\github\qtodo\qtodo_tests\main.cpp(3): fatal error C1083: Cannot open include file: 'gtest/gtest.h': No such file or directory

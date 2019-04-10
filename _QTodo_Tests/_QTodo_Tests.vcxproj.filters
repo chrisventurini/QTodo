@@ -36,6 +36,9 @@
     <ClCompile Include="MainWindow_Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DomainEventDispatcher_Tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="QTodo_Tests.ui">

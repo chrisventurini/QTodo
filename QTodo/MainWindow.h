@@ -3,6 +3,9 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
 
+namespace QTodo
+{
+
 class MainWindow : public QMainWindow
 {
 	Q_OBJECT
@@ -13,3 +16,5 @@ public:
 private:
 	Ui::MainWindowClass ui;
 };
+
+}
