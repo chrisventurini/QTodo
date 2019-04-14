@@ -28,6 +28,9 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Source Files\Mocks">
+      <UniqueIdentifier>{06230bb8-708b-40f3-9cd4-9974d81e646d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="DomainEventDispatcher_Tests.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DomainDispatcherMock.cpp">
+      <Filter>Source Files\Mocks</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

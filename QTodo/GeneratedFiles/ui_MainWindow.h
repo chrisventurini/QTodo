@@ -11,10 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,9 +22,9 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindowClass
 {
 public:
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
     QWidget *centralWidget;
+    QPushButton *newTodoCreatePushButton;
+    QLineEdit *newTodoTitleLineEdit;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindowClass)
@@ -32,14 +32,14 @@ public:
         if (MainWindowClass->objectName().isEmpty())
             MainWindowClass->setObjectName(QString::fromUtf8("MainWindowClass"));
         MainWindowClass->resize(600, 400);
-        menuBar = new QMenuBar(MainWindowClass);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        MainWindowClass->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindowClass);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
-        MainWindowClass->addToolBar(mainToolBar);
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        newTodoCreatePushButton = new QPushButton(centralWidget);
+        newTodoCreatePushButton->setObjectName(QString::fromUtf8("newTodoCreatePushButton"));
+        newTodoCreatePushButton->setGeometry(QRect(490, 20, 62, 19));
+        newTodoTitleLineEdit = new QLineEdit(centralWidget);
+        newTodoTitleLineEdit->setObjectName(QString::fromUtf8("newTodoTitleLineEdit"));
+        newTodoTitleLineEdit->setGeometry(QRect(30, 20, 311, 20));
         MainWindowClass->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MainWindowClass);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
@@ -53,6 +53,7 @@ public:
     void retranslateUi(QMainWindow *MainWindowClass)
     {
         MainWindowClass->setWindowTitle(QApplication::translate("MainWindowClass", "MainWindow", nullptr));
+        newTodoCreatePushButton->setText(QApplication::translate("MainWindowClass", "Create", nullptr));
     } // retranslateUi
 
 };

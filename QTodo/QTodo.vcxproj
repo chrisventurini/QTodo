@@ -39,11 +39,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IncludePath>..\QTodoDomain;..\thirdparty\boost\1.69.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\Win32\UnitTesting;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\Win32\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTesting|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>..\thirdparty\boost\1.69.0\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\QTodoDomain;..\thirdparty\boost\1.69.0\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>

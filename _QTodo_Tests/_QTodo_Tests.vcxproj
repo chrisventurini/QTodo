@@ -11,6 +11,7 @@
     </ProjectConfiguration>
     <ProjectConfiguration Include="UnitTesting|Win32">
       <Configuration>UnitTesting</Configuration>
+      <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -38,7 +39,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>..\QTodo\GeneratedFiles;..\QTodo;$(IncludePath)</IncludePath>
+    <IncludePath>..\QTodo\QTodoDomain;..\QTodo\GeneratedFiles;..\QTodo;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTesting|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
@@ -164,6 +165,7 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DomainDispatcherMock.cpp" />
     <ClCompile Include="DomainEventDispatcher_Tests.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow_Tests.cpp" />
