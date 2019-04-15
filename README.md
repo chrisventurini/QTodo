@@ -6,4 +6,4 @@ With my resent new employment with [Riot Games](https://www.riotgames.com/) I've
 
 This project is going to leverage C++, Visual Studio, the QT Open Source Tookit, and Google Test. 
 
-[Twitter](https://twitter.com/ChrisMVenturini)
+Follow my progression on [Twitter](https://twitter.com/ChrisMVenturini)!!
