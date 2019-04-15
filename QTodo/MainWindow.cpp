@@ -1,5 +1,15 @@
 #include "MainWindow.h"
 
+#include <string>
+#include <utility>
+#include "Todo.h"
+#include "TodoCreatedEvent.h"
+
+using QTodo::Domain::DomainEventDispatcher;
+using QTodo::Domain::Todo;
+using QTodo::Domain::TodoCreatedEvent;
+using std::string;
+
 namespace QTodo
 {
 
@@ -20,6 +30,12 @@ void MainWindow::onNewTodoCreatePushButtonClicked()
 	const QLineEdit* const newTodoTitleLine = findChild<QLineEdit*>("newTodoTitleLineEdit");
 
 	QString newTodoTile = newTodoTitleLine->text();
+
+	Todo newTodo(newTodoTile.toStdString());
+
+	TodoCreatedEvent todoCreatedEvent(&newTodo);
+
+	dispatcher_.Dispatch(todoCreatedEvent);
 }
 
 }

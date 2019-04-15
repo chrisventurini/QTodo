@@ -18,8 +18,10 @@ TEST(DomainEventDispatcher, WhenSubscribing_WithAFunction_ShouldBeCalledWhenDisp
 		called = true;
 	});
 
-	TodoCreatedEvent created_event;
-	SUT.Dispatch(created_event);
+	Todo newTodo;
+	TodoCreatedEvent created_event(&newTodo);
+
+	SUT.Dispatch<Todo>(created_event);
 
 	ASSERT_TRUE(called);
 }

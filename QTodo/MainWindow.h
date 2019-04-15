@@ -19,9 +19,8 @@ private:
 	void onNewTodoCreatePushButtonClicked();
 
 	Ui::MainWindowClass ui;
-	Domain::DomainEventDispatcher dispatcher_;
+	Domain::DomainEventDispatcher& dispatcher_;
 };
 
 }
 
-//#include "MainWindow.inl.h";

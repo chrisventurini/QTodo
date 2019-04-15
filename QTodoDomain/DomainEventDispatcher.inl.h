@@ -10,14 +10,14 @@ void DomainEventDispatcher::Dispatch(DomainEvent<T>& event)
 }
 
 template <typename T>
-void DomainEventDispatcher::Subscribe(const std::string& eventType, std::function<void(DomainEvent<T>&)> slot)
+void DomainEventDispatcher::Subscribe(const char* eventType, std::function<void(DomainEvent<T>&)> slot)
 {
 	get_signal<T>(eventType)->connect(slot);
 }
 
 // Private methods 
 template <typename T>
-signal_ptr<T> DomainEventDispatcher::get_signal(const std::string& eventType)
+signal_ptr<T> DomainEventDispatcher::get_signal(const char* eventType)
 {
 	auto slotIter = _signals.find(eventType);
 

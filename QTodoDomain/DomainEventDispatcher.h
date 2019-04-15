@@ -18,18 +18,17 @@ namespace Domain {
 class DomainEventDispatcher
 {
 public:
-
 	template<class T>
 	void Dispatch(DomainEvent<T>& event);
 
 	template<class T>
-	void Subscribe(const std::string& eventType, std::function<void(DomainEvent<T>&)> slot);
+	void Subscribe(const char* eventType, std::function<void(DomainEvent<T>&)> slot);
 
 private:
 	template<class T>
-	signal_ptr<T> get_signal(const std::string& eventType);
+	signal_ptr<T> get_signal(const char* eventType);
 
-	std::unordered_map<std::string, boost::any> _signals;
+	std::unordered_map<const char*, boost::any> _signals;
 };
 
 }}
