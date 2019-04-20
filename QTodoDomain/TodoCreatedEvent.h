@@ -6,15 +6,14 @@
 namespace QTodo {
 namespace Domain {
 
-class TodoCreatedEvent : public DomainEvent<Todo>
-{
-public:
-	TodoCreatedEvent(Todo* newTodo);
+	class TodoCreatedEvent : public DomainEvent<Todo>
+	{
+	public:
+		explicit TodoCreatedEvent(Todo newTodo);
 
-	static constexpr const char* EVENT_TYPE = "TODO_CREATED";
+		static constexpr const char* EVENT_TYPE = "TODO_CREATED";
 
-	const char* GetEventType() const override;
-};
-
+		const char* GetEventType() const override;
+	};
 
 }}

@@ -214,10 +214,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Todo.cpp" />
     <ClCompile Include="TodoCreatedEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DomainEvent.h" />
+    <ClInclude Include="DomainEvent.inl.h" />
     <ClInclude Include="DomainEventDispatcher.h" />
     <ClInclude Include="DomainEventDispatcher.inl.h" />
     <ClInclude Include="QTodoDomain.h" />

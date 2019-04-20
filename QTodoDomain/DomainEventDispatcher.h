@@ -9,20 +9,21 @@
 
 #include "DomainEvent.h"
 
-template<typename T>
-using signal_ptr = std::shared_ptr<boost::signals2::signal<void(QTodo::Domain::DomainEvent<T>&)>>;
 
 namespace QTodo {
 namespace Domain {
+
+	template<typename T>
+	using signal_ptr = std::shared_ptr<boost::signals2::signal<void(const DomainEvent<T>&)>>;
 
 class DomainEventDispatcher
 {
 public:
 	template<class T>
-	void Dispatch(DomainEvent<T>& event);
+	void Dispatch(const DomainEvent<T>& event);
 
 	template<class T>
-	void Subscribe(const char* eventType, std::function<void(DomainEvent<T>&)> slot);
+	void Subscribe(const char* eventType, std::function<void(const DomainEvent<T>&)> slot);
 
 private:
 	template<class T>

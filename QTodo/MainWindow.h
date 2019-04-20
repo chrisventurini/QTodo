@@ -16,7 +16,7 @@ public:
 	MainWindow(Domain::DomainEventDispatcher& dispatcher);
 
 private:
-	void onNewTodoCreatePushButtonClicked();
+	void onNewTodoCreatePushButtonClicked() const;
 
 	Ui::MainWindowClass ui;
 	Domain::DomainEventDispatcher& dispatcher_;

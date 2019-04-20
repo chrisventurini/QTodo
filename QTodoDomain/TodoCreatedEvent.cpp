@@ -6,7 +6,7 @@ using std::string;
 namespace QTodo {
 namespace Domain {
 
-TodoCreatedEvent::TodoCreatedEvent(Todo* newTodo) :DomainEvent<Todo>(newTodo) { }
+TodoCreatedEvent::TodoCreatedEvent(Todo newTodo) :DomainEvent<Todo>(newTodo) { }
 
 const char* TodoCreatedEvent::GetEventType() const
 {

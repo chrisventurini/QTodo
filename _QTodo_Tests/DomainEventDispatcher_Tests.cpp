@@ -1,4 +1,4 @@
-#include "gtest/gtest.h";
+#include "gtest/gtest.h"
 
 #include "QTodoDomain.h"
 
@@ -11,17 +11,17 @@ TEST(DomainEventDispatcher, WhenSubscribing_WithAFunction_ShouldBeCalledWhenDisp
 {
 	DomainEventDispatcher SUT;
 
-	bool called(false);
+	bool called = false;
 
-	SUT.Subscribe<Todo>(TodoCreatedEvent::EVENT_TYPE, [&](DomainEvent<Todo>&)
+	SUT.Subscribe<Todo>(TodoCreatedEvent::EVENT_TYPE, [&](const DomainEvent<Todo>&)
 	{
 		called = true;
 	});
 
-	Todo newTodo;
-	TodoCreatedEvent created_event(&newTodo);
+	const Todo stubTodo;
+	const TodoCreatedEvent createdEvent(stubTodo);
 
-	SUT.Dispatch<Todo>(created_event);
+	SUT.Dispatch<Todo>(createdEvent);
 
 	ASSERT_TRUE(called);
 }

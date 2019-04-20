@@ -5,15 +5,14 @@
 namespace QTodo {
 namespace Domain {
 
-struct Todo
-{
-	Todo() = default;
-	Todo(const std::string newTitle)
-		:title(newTitle)
+	struct Todo
 	{
-	}
+		Todo() = default;
+		explicit Todo(std::string newTitle);
 
-	std::string title;
-};
+		bool operator==(const Todo& other) const;
+
+		std::string title;
+	};
 
 }}
